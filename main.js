@@ -37,7 +37,7 @@ createApp({
             else if (!isNaN(value) && key == 'price') {
                 return 'DECIMAL(6,3) NOT NULL'
             } else if (!isNaN(value) && key == 'id') {
-                return 'SMALLINT NOT NULL AUTO_INCREMENT '
+                return 'SMALLINT NOT NULL AUTO_INCREMENT UNIQUE '
             }
             else {
                 if (key.includes('_mpg')) {
